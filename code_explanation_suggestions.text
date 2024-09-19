@@ -1,0 +1,64 @@
+def f(s):
+
+    r = {}
+
+    for i in s:
+
+        if i in r:
+
+            r[i] += 1
+
+        else:
+
+            r[i] = 1
+
+    return r
+
+This Is logic for number of each element in an input and return dictionary
+
+Explanation
+-------------
+
+1.	The function f(s) takes s as input, where s can be a string, list, tuple, or set.
+2.	First, an empty dictionary r is initialized.
+3.	The function iterates through each element in ‘s’.
+4.	It checks if the element ‘i’ is already a key in the dictionary ‘r’
+ 4.1  If the element is present in ‘r’, it increments the count by 1. 
+ 4.2  If the element is not present, it sets the count to 1.
+5.	Finally, the function returns the dictionary ‘r’ with the counts of each element.
+ 
+Example 
+--------
+   
+  I passed one string ‘welcome’ it returns {'w': 1, 'e': 2, 'l': 1, 'c': 1, 'o': 1, 'm': 1}
+
+
+Suggestions for improving the code
+--------------------------------------
+
+ We can use inbuilt function ‘Counter’
+
+    from collections import Counter
+    from typing import Any,  Dict
+    
+    def count_elements(s: Any) -> Dict[Any, int]:
+        return Counter(s)
+
+
+For readability the above top code 
+-----------------------------------
+
+Use proper function name, Type Hinting, Proper variable name
+
+from typing import Any, Dict
+
+def count_occurrences(iterable: Any) -> Dict[Any, int]:
+    element_count = {}     
+    for element in iterable:
+        if element in element_count:
+            element_count[element] += 1
+         else:
+            element_count[element] = 1
+    return element_count
+
+
