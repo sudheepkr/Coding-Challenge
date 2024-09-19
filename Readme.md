@@ -45,7 +45,3 @@ To set up and run this project:
 3. Install unittest (if not already available) using: pip install unittest
 4. Run the tests as described in the "Running Tests" section.
 
-
-
-
-![image](https://github.com/user-attachments/assets/4c789366-03a7-4cc8-a139-46acb7f20e22)
